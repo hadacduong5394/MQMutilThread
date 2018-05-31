@@ -54,7 +54,6 @@ namespace Core.Utils
                 }
                 if (!connection.IsOpen)
                 {
-                    //connection.Close();
                     connection.Dispose();
                     connection = MQFactory.CreateConnection();
                 }
